@@ -1,11 +1,16 @@
 let score = "hitesh"
+// const {score} = req.body
+
 
 //console.log(typeof score);
 //console.log(typeof(score));
 
+
 let valueInNumber = Number(score)
 //console.log(typeof valueInNumber);
+//  number
 //console.log(valueInNumber);
+//   NaN
 
 
 // "33" => 33
@@ -25,7 +30,9 @@ let someNumber = 33
 
 let stringNumber = String(someNumber)
 // console.log(stringNumber);
+//  33
 // console.log(typeof stringNumber);
+//  string
 
 // *********************** Operations ***********************
 
