@@ -1,8 +1,12 @@
 const accountId = 144553
 let accountEmail = "hitesh@google.com"
 var accountPassword = "12345"
+
 accountCity = "Jaipur"
+// but this is not a good idea to declare a variable
+
 let accountState;
+// this will be considered as undefined 
 
 // accountId = 2 // not allowed
 

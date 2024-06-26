@@ -10,16 +10,18 @@ console.log("Hitesh")
 
 
 let name = "hitesh"
-let age = 18
-let isLoggedIn = false
-let state;
-
-// number => 2 to power 53
-// bigint
 // string => ""
+
+let age = 18
+// number => 2 to power 53
+// if number is very large then use bigint
+
+let isLoggedIn = false
 // boolean => true/false
-// null => standalone value
-// undefined => 
+
+let state;
+// undefined => value is not assigned 
+
 // symbol => unique
 
 
