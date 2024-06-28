@@ -7,12 +7,15 @@ const scoreValue = 100.3
 
 const isLoggedIn = false
 const outsideTemp = null
+
 let userEmail;
+//type: undefined
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
 console.log(id === anotherId);
+//false because these are different
 
 // const bigNumber = 3456543576654356754n
 
