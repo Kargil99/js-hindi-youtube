@@ -1,4 +1,7 @@
 // singleton
+//  Singletons are used to create an instance of a class 
+// if it does not exist or
+//  else return the reference of the existing one.
 // Object.create
 
 // object literals
@@ -7,9 +10,9 @@ const mySym = Symbol("key1")
 
 
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",
+    name: "Biswojit",
+    "full name": "Biswojit Biswal",
+    [mySym]: "mykey1", // right way to use symbol inside an object
     age: 18,
     location: "Jaipur",
     email: "hitesh@google.com",
@@ -17,22 +20,29 @@ const JsUser = {
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+console.log(JsUser.email)
+console.log(JsUser["email"])
+console.log(JsUser["full name"])
+console.log(JsUser[mySym])
+// Mostly the elements of javascript objects are accessed by using " . "
+// but using " [] " also these can be accessed.
+
 
 JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)
+// Object.freeze(JsUser) 
 JsUser.email = "hitesh@microsoft.com"
-// console.log(JsUser);
+// console.log(JsUser);   gives output as: "hitesh@chatgpt.com"
 
 JsUser.greeting = function(){
     console.log("Hello JS user");
 }
+
 JsUser.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
+    console.log(`Hello JS user, ${this.name}`); //string interpolation
 }
 
+
 console.log(JsUser.greeting());
+//    Hello JS user
 console.log(JsUser.greetingTwo());
+// "Hello JS user, Biswojit
