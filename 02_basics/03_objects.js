@@ -1,10 +1,10 @@
-// singleton
+// singleton( 1st method of object creation)
 //  Singletons are used to create an instance of a class 
 // if it does not exist or
 //  else return the reference of the existing one.
 // Object.create
 
-// object literals
+// object literals( 2nd method of obj creation)
 
 const mySym = Symbol("key1")
 
